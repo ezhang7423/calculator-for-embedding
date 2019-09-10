@@ -1,4 +1,4 @@
-# calculator-for-embedding
+# easyCalc
 <h1>a calculator that works for you.</h1>
 <h2>https://ezhang7423.github.io/calculator-for-embedding/</h2>
 
