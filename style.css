@@ -29,21 +29,21 @@
 .calculator{
   height: 500px;
   width: 300px;
-	background-color: black;
-	display: flex;
-	flex-direction: column-reverse;
+  background-color: black;
+  display: flex;
+  flex-direction: column-reverse;
   justify-content: flex-end;
 }
 
 .o5{
   display: flex;
   flex: 8;
-	color: white;
-	align-items: center;
+  color: white;
+  align-items: center;
   justify-content: flex-end;
   padding-right: 10px;
-	font-size: 70px;
-	font-family: arial,sans-serif;
+  font-size: 70px;
+  font-family: arial,sans-serif;
 }
 
 .o0{
@@ -68,6 +68,8 @@
   justify-content: flex-end;
   padding: 10px;
 }
+
+
 button:last-child{
   margin-right: 10px;
 }
@@ -82,4 +84,12 @@ button:last-child{
 
 .add{
   padding-top: 2px;
+}
+
+.number:active{
+  background-color: darkgrey;
+}
+
+.operator:active{
+  background-color: rgb(255, 194, 107);
 }
