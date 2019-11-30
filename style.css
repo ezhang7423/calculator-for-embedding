@@ -114,7 +114,7 @@ button:last-child{
   outline: none;
 }
 
-@media (pointer: fine), (pointer:coarse) {
+@media (pointer: fine){
   
   .number{
     display: flex;
