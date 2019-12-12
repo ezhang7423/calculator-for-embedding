@@ -3,11 +3,12 @@ let consoView = document.querySelector('.inputArea')
 
 let currentStack = ''
 
+let fonS
 
-function zaddCharToStackAndView(char) {
-	currentStack = currentStack.concat(char)
-	consoView.value = currentStack
-};
+// function zaddCharToStackAndView(char) {
+// 	currentStack = currentStack.concat(char)
+// 	consoView.value = currentStack
+// };
 
 for (let x = 0; x < 10; x++) {
 	document.querySelector(`.d${x}`).addEventListener('click', () => {
@@ -17,13 +18,24 @@ for (let x = 0; x < 10; x++) {
 }
 
 
-consoView.addEventListener('keyup', () => { currentStack = consoView.value })
+consoView.addEventListener('keyup', () => {
+	currentStack = consoView.value;
+	if (currentStack.length > 8 && currentStack.length < 11) {
+		consoView.style["font-size"] = `${5.6 - (currentStack.length - 8)}rem`
+	}
+	else if (currentStack.length > 11) {
+		consoView.style["font-size"] = "1rem"
+	}
+	else if (currentStack.length < 8) {
+		consoView.style["font-size"] = "5.6rem"
+	}
+})
 
 
 consoView.addEventListener('click', () => { if (consoView.value === '0') consoView.value = '' })
 
 
-big = 1000000
+big = 1000000000000
 
 
 consoView.addEventListener('keydown', (e) => {
